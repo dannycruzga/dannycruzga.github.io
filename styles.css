@@ -46,3 +46,72 @@ h2 {
   font-weight: 600;
   font-family: "Playfair Display", serif;
 }
+.project {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 3px solid var(--sage-green);
+}
+
+.project img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.project h3 {
+  color: var(--midnight-blue);
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.project p {
+  flex: 1;
+  line-height: 1.7;
+  color: #374151;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--midnight-blue);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  color: var(--midnight-blue);
+}
+
+.contact p {
+  color: #475569;
+  font-size: 1.1em;
+}
+
+/* Footer (optional) */
+footer {
+  text-align: center;
+  background: var(--midnight-blue);
+  color: var(--text-light);
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
