@@ -1,33 +1,8 @@
 body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, var(--midnight-blue), #112240);
-  color: var(--text-light);
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    background: #ffb115;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Header */
 h1 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  background: linear-gradient(90deg, var(--gold), var(--sage-green));
-  color: var(--midnight-blue);
-  padding: 45px 0;
-  margin: 0;
-  font-size: 2.8em;
-  letter-spacing: 1.5px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Content Boxes */
-div {
-  width: 80%;
-  margin: 50px auto;
-  background: var(--card-bg);
-  color: var(--text-dark);
-  border-radius: 20px;
-  padding: 35px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s, box-shadow 0.3s;
+    color: #270287;
+    text-align: center;
 }
