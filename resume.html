@@ -1,173 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Danny Cruz Galindo — Resume</title>
+<meta charset="UTF-8">
+<title>Danny Cruz Galindo - Resume</title>
 <style>
-  /* Reset & base */
-  * {box-sizing: border-box;}
-  html,body{height:100%;margin:0;font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111;}
-  a {color:inherit;text-decoration:none;}
-  /* Layout */
-  .resume-wrap {max-width:900px;margin:28px auto;padding:28px;border:1px solid #e6e6e6;border-radius:10px;background:#fff;}
-  .header {display:flex;flex-wrap:wrap;align-items:center;gap:12px;}
-  .name {font-size:1.6rem;font-weight:700;}
-  .contact {margin-left:auto;text-align:right;font-size:0.95rem;color:#333;}
-  .contact a{display:block;}
-  /* Two-column main */
-  .main {display:grid;grid-template-columns: 1fr 320px;gap:24px;margin-top:20px;}
-  @media (max-width:860px){ .main {grid-template-columns:1fr;} .contact{text-align:left;margin-left:0;} }
-  /* Sections */
-  .section {margin-bottom:18px;padding-bottom:8px;border-bottom:1px dashed #eee;}
-  .section h3 {margin:0 0 8px 0;font-size:1.05rem;color:#0b63a5;}
-  .muted {color:#555;font-size:0.95rem;}
-  /* Education / Experience rows */
-  .row {display:flex;justify-content:space-between;gap:12px;align-items:flex-start;}
-  .row .title {font-weight:600;}
-  .row .meta {font-size:0.92rem;color:#666;text-align:right;min-width:110px;}
-  .bullets {margin:8px 0 0 0;padding-left:18px;}
-  .bullets li {margin-bottom:6px;}
-  /* Skills, Languages, Interests */
-  .chip {display:inline-block;padding:6px 10px;margin:6px 6px 0 0;border-radius:999px;background:#f3f7fb;font-size:0.9rem;border:1px solid #e8f0fb;}
-  /* small print */
-  .footer-note {font-size:0.85rem;color:#666;margin-top:12px;}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px auto;
+        max-width: 900px;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 4px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 4px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .section {
+        margin-top: 25px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .left {
+        font-weight: bold;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    ul {
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
 </style>
 </head>
 <body>
-  <div class="resume-wrap" role="document" aria-label="Resume — Danny Cruz Galindo">
-    <!-- Header -->
-    <div class="header">
-      <div>
-        <div class="name">Danny Cruz Galindo</div>
-        <div class="muted">Bachelor of Science (B.S) — Computer Information Systems</div>
-        <div class="muted">Minor: Business Information Management</div>
-      </div>
 
-      <div class="contact" aria-label="contact information">
-        <a href="https://www.linkedin.com/in/danny-cruz-galindo-ba5a88383" target="_blank" rel="noopener">linkedin.com/in/danny-cruz-galindo-ba5a88383</a>
-        <div>(xxx) xxx-xxxx</div>
+<!-- HEADER -->
+<div class="center">
+    <h1 style="margin-bottom: 5px;">Danny Cruz Galindo</h1>
+    <div>
+        <a href="https://www.linkedin.com/in/danny-cruz-galindo-ba5a88383">
+            www.linkedin.com/in/danny-cruz-galindo-ba5a88383
+        </a> |
+        (xxx) xxx-xxxx |
         <a href="mailto:dannyc@email.sc.edu">dannyc@email.sc.edu</a>
-      </div>
+    </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+    <h2>Education</h2>
+
+    <div class="row">
+        <div class="left">
+            UNIVERSITY OF SOUTH CAROLINA - MOLINAROLI COLLEGE OF ENGINEERING AND COMPUTING
+            <div style="font-weight: normal;">Bachelor of Science (B.S)</div>
+        </div>
+        <div class="right">May 2029</div>
     </div>
 
-    <div class="main">
-      <!-- Left column (primary) -->
-      <div>
-        <!-- Education -->
-        <div class="section" id="education">
-          <h3>Education</h3>
-          <div class="row">
-            <div>
-              <div class="title">University of South Carolina — Molinaroli College of Engineering and Computing</div>
-              <div class="muted">Columbia, South Carolina</div>
-              <div class="muted" style="margin-top:4px;">Awards: LIFE Scholarship, PC Pro Certified, The Seal of Biliteracy</div>
-            </div>
-            <div class="meta">Expected Graduation: May 2029</div>
-          </div>
-        </div>
-
-        <!-- Professional Experience -->
-        <div class="section" id="experience">
-          <h3>Professional Experience</h3>
-
-          <div class="row" style="margin-bottom:6px;">
-            <div>
-              <div class="title">Worker — By The Yard Landscaping LLC</div>
-              <div class="muted">Moncks Corner, South Carolina</div>
-            </div>
-            <div class="meta">June 2018 – August 2025</div>
-          </div>
-
-          <ul class="bullets" aria-label="Work highlights">
-            <li>Demonstrated respect, friendliness and willingness to help wherever needed.</li>
-            <li>Assisted with day-to-day operations; worked efficiently and productively with team members.</li>
-            <li>Adapted and worked diligently in challenging conditions.</li>
-            <li>Implemented efficient irrigation systems to conserve water.</li>
-            <li>Designed and applied innovative solutions for difficult landscaping problems.</li>
-          </ul>
-        </div>
-
-        <!-- Leadership Experience -->
-        <div class="section" id="leadership">
-          <h3>Leadership & Involvement</h3>
-
-          <div style="margin-bottom:12px;">
-            <div class="row">
-              <div>
-                <div class="title">Member — Latin American Student Organization</div>
-                <div class="muted">Columbia, South Carolina</div>
-              </div>
-              <div class="meta">September 2025 – Present</div>
-            </div>
-            <ul class="bullets">
-              <li>Follow school and classroom policies, regulations, dress codes, and schedules.</li>
-              <li>Attend weekly meetings to stay informed about campus events.</li>
-              <li>Connect with peers to promote diversity and inclusion initiatives.</li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="row">
-              <div>
-                <div class="title">Member — Association of Latino Professionals for America</div>
-                <div class="muted">Columbia, South Carolina</div>
-              </div>
-              <div class="meta">September 2025 – Present</div>
-            </div>
-            <ul class="bullets">
-              <li>Attend club meetings to explore cultures and traditions.</li>
-              <li>Participate in networking events to connect with peers and upperclassmen.</li>
-              <li>Build teamwork and communication skills through collaboration.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right column (sidebar) -->
-      <div>
-        <div class="section" id="summary">
-          <h3>Profile</h3>
-          <div class="muted">
-            Motivated Computer Information Systems student with practical hands-on experience in operations, teamwork, and solution-driven landscaping projects. Bringing bilingual communication, technical skills, and a strong work ethic.
-          </div>
-        </div>
-
-        <div class="section" id="skills">
-          <h3>Skills</h3>
-          <div>
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">Java</span>
-            <span class="chip">Eclipse</span>
-          </div>
-        </div>
-
-        <div class="section" id="languages">
-          <h3>Languages</h3>
-          <div class="muted">Spanish (Native) • English (Fluent)</div>
-        </div>
-
-        <div class="section" id="interests">
-          <h3>Interests</h3>
-          <div>
-            <span class="chip">Travel</span>
-            <span class="chip">Gaming</span>
-            <span class="chip">Event Organization</span>
-            <span class="chip">Cybersecurity</span>
-            <span class="chip">Soccer</span>
-            <span class="chip">Gardening</span>
-          </div>
-        </div>
-
-        <div class="section" id="awards">
-          <h3>Awards & Certifications</h3>
-          <div class="muted">LIFE Scholarship • PC Pro Certified • The Seal of Biliteracy</div>
-        </div>
-      </div>
+    <div class="row">
+        <div>Columbia, South Carolina</div>
     </div>
 
-    <div class="footer-note">Resume content converted from the file you uploaded. :contentReference[oaicite:1]{index=1}</div>
-  </div>
+    <div style="margin-top: 5px;">
+        <strong>Major(s):</strong> Computer Information Systems<br>
+        <strong>Minor(s):</strong> Business Information Management<br>
+        <strong>Award(s):</strong> LIFE Scholarship, PC Pro Certified, The Seal of Biliteracy
+    </div>
+</div>
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<div class="section">
+    <h2>Professional Experience</h2>
+
+    <div class="row">
+        <div class="left">
+            By The Yard Landscaping LLC<br>
+            <span style="font-weight: normal;">Worker</span>
+        </div>
+        <div class="right">
+            Moncks Corner, South Carolina<br>
+            June 2018 – August 2025
+        </div>
+    </div>
+
+    <ul>
+        <li>Demonstrated respect, friendliness and willingness to help wherever needed.</li>
+        <li>Assisted with day-to-day operations, working efficiently and productively with team members.</li>
+        <li>Able to adapt and work diligently in hard conditions.</li>
+        <li>Implemented efficient irrigation systems for water conservation.</li>
+        <li>Implemented innovative solutions for challenging landscaping issues.</li>
+    </ul>
+</div>
+
+<!-- LEADERSHIP EXPERIENCE -->
+<div class="section">
+    <h2>Leadership Experience</h2>
+
+    <div class="row">
+        <div class="left">
+            Latin American Student Organization<br>
+            <span style="font-weight: normal;">Member</span>
+        </div>
+        <div class="right">
+            Columbia, South Carolina<br>
+            September 2025 – Present
+        </div>
+    </div>
+
+    <ul>
+        <li>Followed school and classroom policies, regulations, dress codes, and schedules.</li>
+        <li>Attend weekly meetings to stay informed about campus events.</li>
+        <li>Connect with peers to promote diversity and inclusion initiatives.</li>
+    </ul>
+
+    <br>
+
+    <div class="row">
+        <div class="left">
+            Association of Latino Professionals for America<br>
+            <span style="font-weight: normal;">Member</span>
+        </div>
+        <div class="right">
+            Columbia, South Carolina<br>
+            September 2025 – Present
+        </div>
+    </div>
+
+    <ul>
+        <li>Attending club meetings to explore cultures and traditions.</li>
+        <li>Participate in networking events to connect with peers and upperclassmen.</li>
+        <li>Build teamwork and communication skills through collaboration with peers.</li>
+    </ul>
+</div>
+
+<!-- LANGUAGES -->
+<div class="section">
+    <h2>Foreign Language</h2>
+    Spanish (Native) & English
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+    <h2>Skills</h2>
+    HTML, CSS, Java, Eclipse Coding
+</div>
+
+<!-- INTERESTS -->
+<div class="section">
+    <h2>Interests</h2>
+    Travel, Gaming, Organization Events, Cybersecurity, Soccer, Gardening
+</div>
+
 </body>
 </html>
