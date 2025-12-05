@@ -1,33 +1,4 @@
 body {
-font-family: Arial, sans-serif;
-background: #f5f7fa;
-margin: 0;
-padding: 0;
-color: #333;
-}
-
-
-/* Header */
-.header {
-background: linear-gradient(135deg, #1e3c72, #2a5298);
-color: white;
-text-align: center;
-padding: 40px 20px;
-}
-
-
-.subtitle {
-font-size: 18px;
-opacity: 0.9;
-}
-
-
-/* Section styling */
-.section {
-padding: 40px 20px;
-margin: 20px auto;
-width: 80%;
-background: white;
 border-radius: 10px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -77,4 +48,38 @@ transition: transform 0.2s ease;
 
 
 .project img:hover {
+transform: scale(1.05);
+}
+
+
+.project h3 {
+color: #1e3c72;
+text-decoration: underline;
+}
+
+
+/* Contact section */
+.contact {
+background: #f1ecff;
+color: #4b2bb6;
+text-align: center;
+}
+
+
+/* Links */
+a {
+color: #1e3c72;
+font-weight: bold;
+text-decoration: none;
+}
+
+
+a:hover {
+color: #16315c;
+}
+
+
+/* Smooth spacing */
+h2, h3 {
+margin-bottom: 10px;
 }
